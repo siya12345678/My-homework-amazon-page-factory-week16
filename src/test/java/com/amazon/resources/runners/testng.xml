@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="testsuite" verbose="1">
+    <listeners>
+        <listener class-name="com.amazon.customlisteners.CustomListeners"/>
+        <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+        <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+    </listeners>
+    <test name="Home Page Test">
+        <parameter name="search1" value="Laptop"></parameter>
+        <parameter name="description1"
+                   value="2020 Newest HP Stream 11.6 inch HD Laptop, Intel Celeron N4000, 4 GB RAM, 64 GB eMMC, Webcam, HDMI, Windows 10"></parameter>
+        <parameter name="quantity1" value="3"></parameter>
+        <parameter name="message1" value="Added to Cart"></parameter>
+        <parameter name="search2" value="Mobile Phone"></parameter>
+        <parameter name="description2"
+                   value="Nokia XR20 5G | Android 11 | Unlocked Smartphone | Dual SIM | US Version | 6/128GB | 6.67-Inch Screen | 48MP Dual Camera | Polar Night"></parameter>
+        <parameter name="quantity2" value="2"></parameter>
+        <parameter name="message2" value="Added to Cart"></parameter>
+        <classes>
+            <class name="com.amazon.testsuite.HomePageTest"></class>
+        </classes>
+    </test>
+</suite>
